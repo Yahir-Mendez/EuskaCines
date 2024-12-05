@@ -1,0 +1,83 @@
+.main__carousel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 10rem;
+}
+.carousel__title{
+    color: var(--colorThree);
+    padding: .5rem 0;
+    width: 10em;
+    text-align: center;
+    border-top: 1px solid var(--colorTwo);
+    border-bottom: 1px solid var(--colorTwo);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+@keyframes slidy--3 {
+    0% { transform: translateX(0); }            /* Inicio en el punto original */
+    20% { transform: translateX(0); }           /* Mantiene la posición por un tiempo */
+    25% { transform: translateX(-25rem); }      /* Se mueve hacia la izquierda (-25rem) */
+    45% { transform: translateX(-25rem); }      /* Mantiene la posición desplazada por un tiempo */
+    50% { transform: translateX(-25rem); }      /* Asegura que se mantenga en esta posición */
+    75% { transform: translateX(0); }           /* Regresa a la posición original */
+    100% { transform: translateX(0); }          /* Finaliza la vuelta en el punto original */
+}
+
+
+
+.carousel__content{
+    height: auto;
+    width: 25rem;
+    display: flex;
+    overflow: hidden;
+    justify-content:flex-start;
+    gap: 1.5rem;
+    justify-content: center;
+    justify-content: flex-start;
+}
+
+
+.carousel__card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.carousel__card{
+    height: auto;
+    flex-basis:11.5rem;
+    flex-shrink: 0;
+    animation: slidy--3  10s  infinite;
+}
+
+
+@media screen and (min-width:768px) {
+    /* carrousel */
+    .main__carousel{
+        width: 80%;
+        
+    }
+    .carousel__content{
+        width: 35rem;
+        gap: 5rem;
+    }
+    .carousel__title{
+        font-size: 2rem;
+        padding: .7rem 0;
+    }
+    .carousel__card{
+        flex-basis:15rem;
+    }
+    @keyframes slidy--3 {
+        0% { transform: translateX(0); }                    
+        20% { transform: translateX(0); }                    
+        25% { transform: translateX(-20rem); }               
+        45% { transform: translateX(-20rem); }               
+        50% { transform: translateX(-40rem); }               
+        70% { transform: translateX(-40rem); }               
+        75% { transform: translateX(-40rem); }               
+        100% { transform: translateX(0); }                    
+    }
+}

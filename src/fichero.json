@@ -1,0 +1,40 @@
+{
+    "01":{
+        "nombre":"soy nevenka",
+        "duracion":"1h 52m",
+        "actores": "Urko Olazabal, Mireia Oriol, Lucía Veiga, Carlos Serrano",
+        "genero":"drama",
+        "directores":"Icíar Bollaín",
+        "descripcion":"Película sobre el caso de Nevenka Fernández, la concejala del Ayuntamiento de Ponferrada que en 2001 se atrevió a denunciar por acoso sexual a Ismael Álvarez, el alcalde de la localidad por aquel entonces. Fue la primera en lograr una condena a un cargo político por este motivo.",
+        "valoracion":3
+    },
+    "02":{
+        "nombre":"la habitación de al lado",
+        "duracion":"1h 46m",
+        "actores": "John Turturro, Tilda Swinton, Julianne Moore, Juan Diego Botto, Alessandro Nivola",
+        "genero":"drama",
+        "directores":"Pedro Almodóvar",
+        "descripcion":"La historia de “La habitación de al lado” es la de una madre muy imperfecta y una hija rencorosa separadas por un gran malentendido. Entre ambas, otra mujer, Ingrid (Julianne Moore), amiga de la madre, es depositaria del dolor y la amargura de ambas. Martha, la madre (interpretada por Tilda Swinton), es reportera de guerra e Ingrid novelista de autoficción. La película habla de la crueldad sin límites de las guerras, de los modos tan distintos en que las dos escritoras se acercan y escriben sobre la realidad, habla de la muerte, de la amistad y del placer sexual como los mejores aliados para luchar contra el horror. Y también habla del dulce despertar con los trinos de los pájaros, en una casa construida en plena reserva natural en New England, donde las dos amigas viven una situación extrema y extrañamente dulce.",
+        "valoracion":4
+    },
+    "03":{
+        "nombre":"smile 2",
+        "duracion":"2h 7m",
+        "actores": "Kyle Gallner, Rosemarie DeWitt, Dylan Gelula, Naomi Scott, Raúl Castillo, Lukas Gage, Ray Nicholson, Peter Jacobson, Miles Gutierrez-Riley",
+        "genero":"Terror",
+        "directores":"Pedro Almodóvar",
+        "descripcion":"La estrella del pop mundial Skye Riley (Naomi Scott) está a punto de embarcarse en una nueva gira mundial cuando empieza a experimentar una serie de sucesos cada vez más aterradores e inexplicables. Angustiada por la espiral de horrores y la abrumadora presión de la fama, Skye tendrá que enfrentarse a su oscuro pasado para recuperar el control de su vida antes de que sea demasiado tarde.",
+        "valoracion":3
+    },
+    "04":{
+        "nombre":"venom: el último baile",
+        "duracion":"1h 48m",
+        "actores": "Rhys Ifans, Chiwetel Ejiofor, Tom Hardy, Alanna Ubach, Juno Temple, Clark Backo, Peggy Lu",
+        "genero":"Ciencia Ficción",
+        "directores":"Kelly Marcelr",
+        "descripcion":"Eddie y Venom están a la fuga. Perseguidos por sus sendos mundos y cada vez más cercados, el dúo se ve abocado a tomar una decisión devastadora que hará que caiga el telón sobre el último baile de Venom y Eddie. ",
+        "valoracion":3
+    },
+
+
+}

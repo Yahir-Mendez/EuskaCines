@@ -1,0 +1,22 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    flex-basis: 2rem;
+    width: 100%;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+.pagination__icon{
+    background-color: var(--colorTwo);
+    flex-basis:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    border-radius: 100%;
+    
+}
+.pagination__icon-num{
+    font-size: 1em;
+    color: var(--colorThree);
+}

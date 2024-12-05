@@ -1,0 +1,101 @@
+.main__slider{
+    width: 100%;
+    position:relative;
+    height: 34rem;
+}
+@keyframes slidy {
+    0% { transform: translateX(0); }            /* Primera diapositiva */
+    33.33% { transform: translateX(0); }        /* Mantener en la primera */
+    38.33% { transform: translateX(-100%); }    /* Transición a la segunda */
+    66.66% { transform: translateX(-100%); }    /* Mantener en la segunda */
+    71.66% { transform: translateX(-200%); }    /* Transición a la tercera */
+    100% { transform: translateX(-200%); }      /* Mantener en la tercera */
+}
+
+.main{
+    overflow: hidden;
+}
+.main__slider--animation{
+    display: grid;
+    grid-template-columns: repeat(3, 100vw);
+
+}
+.container-slide{
+   width: 100%;
+   height: 100%;
+   animation: slidy  10s infinite;
+   overflow: hidden;
+}
+
+/*  */
+.slider__image-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .7;
+    opacity: .4;
+}
+.slider__image{
+    width: 100%;
+    height: 100%;
+}
+
+.slider__title{
+    color:var(--colorThree);
+    font-size: 55px;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    
+}
+.slider__box-button,.slider__button{
+    position:absolute;
+    bottom: 1%;
+    left: 0;
+    width: 8rem;
+    height: 3rem;
+}
+.slider__box-button{
+    background-color: var(--colorTwo);
+    background-color:rgba(183, 6, 6, 0.367);
+    border-radius: 0 10px 10px 0;
+}
+.slider__button{ 
+    background: none;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    border-bottom:4px solid var(--colorTwo);
+    border-right:4px solid var(--colorTwo);
+    color:var(--colorThree);
+    font-family: var(--fontOne);
+    font-size: 20px;
+    cursor: pointer;
+}
+a{
+    color:unset;
+    text-decoration: none;
+}
+
+/*  */
+
+@media screen and (min-width:768px) {
+    /* Slider */
+    .main__slider{
+        height: 34rem;
+    }
+    .slider__title{
+        font-size: 6em;
+    }
+    .slider__box-button,.slider__button{
+        width: 16rem;
+        height: 5rem;
+        font-size:1.4em;
+    }
+}
+@media screen and (min-width:1024px) {
+    .main__slider{
+        height: 40rem;
+    }
+}
