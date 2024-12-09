@@ -1,40 +1,84 @@
 {
-    "01":{
+    "p1":{
         "nombre":"soy nevenka",
         "duracion":"1h 52m",
         "actores": "Urko Olazabal, Mireia Oriol, Lucía Veiga, Carlos Serrano",
         "genero":"drama",
         "directores":"Icíar Bollaín",
         "descripcion":"Película sobre el caso de Nevenka Fernández, la concejala del Ayuntamiento de Ponferrada que en 2001 se atrevió a denunciar por acoso sexual a Ismael Álvarez, el alcalde de la localidad por aquel entonces. Fue la primera en lograr una condena a un cargo político por este motivo.",
-        "valoracion":3
+        "valoracion":3,
+        "url" : "/src/public/cartelera/p01.png"
     },
-    "02":{
+    "p2":{
         "nombre":"la habitación de al lado",
         "duracion":"1h 46m",
         "actores": "John Turturro, Tilda Swinton, Julianne Moore, Juan Diego Botto, Alessandro Nivola",
         "genero":"drama",
         "directores":"Pedro Almodóvar",
         "descripcion":"La historia de “La habitación de al lado” es la de una madre muy imperfecta y una hija rencorosa separadas por un gran malentendido. Entre ambas, otra mujer, Ingrid (Julianne Moore), amiga de la madre, es depositaria del dolor y la amargura de ambas. Martha, la madre (interpretada por Tilda Swinton), es reportera de guerra e Ingrid novelista de autoficción. La película habla de la crueldad sin límites de las guerras, de los modos tan distintos en que las dos escritoras se acercan y escriben sobre la realidad, habla de la muerte, de la amistad y del placer sexual como los mejores aliados para luchar contra el horror. Y también habla del dulce despertar con los trinos de los pájaros, en una casa construida en plena reserva natural en New England, donde las dos amigas viven una situación extrema y extrañamente dulce.",
-        "valoracion":4
+        "valoracion":4,
+        "url" : "/src/public/cartelera/p02.png"
     },
-    "03":{
+    "p3":{
         "nombre":"smile 2",
         "duracion":"2h 7m",
         "actores": "Kyle Gallner, Rosemarie DeWitt, Dylan Gelula, Naomi Scott, Raúl Castillo, Lukas Gage, Ray Nicholson, Peter Jacobson, Miles Gutierrez-Riley",
         "genero":"Terror",
         "directores":"Pedro Almodóvar",
         "descripcion":"La estrella del pop mundial Skye Riley (Naomi Scott) está a punto de embarcarse en una nueva gira mundial cuando empieza a experimentar una serie de sucesos cada vez más aterradores e inexplicables. Angustiada por la espiral de horrores y la abrumadora presión de la fama, Skye tendrá que enfrentarse a su oscuro pasado para recuperar el control de su vida antes de que sea demasiado tarde.",
-        "valoracion":3
+        "valoracion":3,
+        "url" : "/src/public/cartelera/p03.png"
     },
-    "04":{
+    "p4":{
         "nombre":"venom: el último baile",
         "duracion":"1h 48m",
         "actores": "Rhys Ifans, Chiwetel Ejiofor, Tom Hardy, Alanna Ubach, Juno Temple, Clark Backo, Peggy Lu",
         "genero":"Ciencia Ficción",
         "directores":"Kelly Marcelr",
         "descripcion":"Eddie y Venom están a la fuga. Perseguidos por sus sendos mundos y cada vez más cercados, el dúo se ve abocado a tomar una decisión devastadora que hará que caiga el telón sobre el último baile de Venom y Eddie. ",
-        "valoracion":3
+        "valoracion":3,
+        "url" : "/src/public/cartelera/p04.png"
     },
+    "p5":{
+        "nombre":"alien: romulus",
+        "duracion":"1h 58m",
+        "actores": "Isabela Merced, Cailee Spaeny, Archie Renaux, David Jonsson, Spike Fearn, Aileen Wu",
+        "genero":"Terror",
+        "directores":"Fede Alvarez",
+        "descripcion":"Mientras rebuscan en las profundidades de una estación espacial abandonada, un grupo de jóvenes colonizadores del espacio se encuentra cara a cara con la forma de vida más aterradora del universo.",
+        "valoracion":5,
+        "url" : "/src/public/cartelera/p05.png"
+    },
+    "p6":{
+        "nombre":"gru 4: mi villano favorito",
+        "duracion":"1h 34m",
+        "actores": "Steve Carell, Joey King, Will Ferrell, Sofia Vergara, Kristen Wiig, Pierre Coffin, Miranda Cosgrove, Stephen Colbert, Chloe Fineman, Madison Polan, Steve Coogan",
+        "genero":"Comedia",
+        "directores":"Chris Renaud",
+        "descripcion":"Después de siete años, nuestro supervillano favorito, ahora convertido en agente de la Liga Anti Villanos, vuelve con una impactante y frenética entrega de caos al más puro estilo Minion en la esperadísima nueva película de Illumination: GRU 4 MI VILLANO FAVORITO. Tras el bombazo en taquilla de Illumination con Minions: El origen de Gru, que recaudó más de mil millones de dólares en todo mundo, la mayor saga de animación de la historia abre un nuevo capítulo en el que Gru (con voz en VO del nominado al Oscar® Steve Carrell y de Florentino Fernández en la versión doblada al español), Lucy (con voz en VO de la nominada al Oscar® Kristen Wiig y de Patricia Conde en la versión doblada al español) y las niñas —Margo (Miranda Cosgrove en VO), Edith (Dana Gaier en VO) y Agnes (Madison Polan en VO)— dan la bienvenida a un nuevo miembro en la familia: Gru Junior, que parece llegar con el propósito de ser un suplicio para su padre.",
+        "valoracion":5,
+        "url" : "/src/public/cartelera/p06.png"
+    },
+    "p7":{
+        "nombre":"joker: folie a deux",
+        "duracion":"2h 17m",
+        "actores": "Brendan Gleeson, Zazie Beetz, Joaquin Phoenix, Catherine Keener, Lady Gaga",
+        "genero":"Ciencia Ficción",
+        "directores":"Todd Phillips",
+        "descripcion":"Tras crear el caos, Arthur Fleck ha sido internado en el Asilo Arkham a la espera de juicio por sus crímenes como Joker. Mientras lucha con su doble identidad, Arthur no sólo tropieza con el amor verdadero, sino que también encuentra la música que siempre ha estado dentro de él.",
+        "valoracion":4,
+        "url" : "/src/public/cartelera/p07.png"
+    },
+    "p8":{
+        "nombre":"bitelchús",
+        "duracion":"1h 44m",
+        "actores": "Willem Dafoe, Jenna Ortega, Michael Keaton, Catherine O'Hara, Winona Ryder, Justin Theroux, Arthur Conti, Monica Bellucci",
+        "genero":"Comedia",
+        "directores":"Tim Burton",
+        "descripcion":"¡Vuelve Bitelchús! Después de una tragedia familiar inesperada, tres generaciones de la familia Deetz regresan a su hogar en la pequeña ciudad de Winter River. La vida de Lydia, que sigue atormentada por Bitelchús, da un vuelco cuando Astrid, su rebelde hija adolescente, descubre la misteriosa maqueta de la ciudad en el ático y el portal al Más Allá se abre de forma accidental. Con tantos problemas en ambos mundos, es sólo cuestión de tiempo que alguien diga tres veces el nombre de Bitelchús y el travieso demonio vuelva a las andadas para desatar su particular caos.",
+        "valoracion":5,
+        "url" : "/src/public/cartelera/p08.png"
+    }
 
 
 }
