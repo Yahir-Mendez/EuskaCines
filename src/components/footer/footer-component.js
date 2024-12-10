@@ -1,10 +1,14 @@
-class FooterComponet extends HTMLElement{
-    constructor(){
-        super();
+// Se define la clase FooterComponent que extiende HTMLElement, lo que permite crear un Web Component
+class FooterComponent extends HTMLElement { 
+    constructor(){ 
+        super(); // Llama al constructor de HTMLElement para asegurarse de que los métodos de la clase base se inicialicen correctamente
 
-        const template = document.createElement('template');
-        template.innerHTML = `
-                <article class="footer__policies">
+        // Crea un nodo de tipo 'template', que almacenará el HTML que se usará en el componente
+        const template = document.createElement('template'); 
+        
+        // Se inserta el HTML dentro del template
+        template.innerHTML = ` 
+            <article class="footer__policies">
                 <div class="footer__policy-links">
                     <p class="policy-links__items"><a href="#" class="policy-links__items-link">Políticas de privacidad</a></p>
                     <p class="policy-links__items"><a href="#" class="policy-links__items-link">Aviso legal</a></p>
@@ -23,8 +27,11 @@ class FooterComponet extends HTMLElement{
                 <div class="common__rectangle common__rectangle--two"></div>
             </section>
         `;
-        this.appendChild(template.content.cloneNode(true));
+        
+        // Se clona el contenido del template y se lo inserta en el componente
+        this.appendChild(template.content.cloneNode(true)); 
     }
 }
 
-customElements.define('footer-component', FooterComponet);
+// Se define el nombre de la etiqueta personalizada ('footer-component') y se asocia a la clase FooterComponent
+customElements.define('footer-component', FooterComponent);

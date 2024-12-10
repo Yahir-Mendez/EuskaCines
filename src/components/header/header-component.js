@@ -1,8 +1,9 @@
+//Se define la clase HeaderComponent que extiende a la clase HTMLElement, lo que permite crear un web component
 class HeaderComponent extends HTMLElement {
     constructor(){
-        super();
-
-        const template = document.createElement('template');
+        super(); //Llama al constructor de HTMLElement para asegurarce de que los metodos de la clase base se inicialicen correctamente
+        const template = document.createElement('template'); // Crea un nodo de tipo 'template', que almacenara el HTML que se usara en el componente
+        //Se inserta el HTML dentro del template
         template.innerHTML = `
             <header class="header">
                 <!-- Navbar -->
@@ -39,8 +40,10 @@ class HeaderComponent extends HTMLElement {
                 <div class="header__qr"><a href="promos.html"><img src="/src/public/iconos/QR-min.svg" alt="icono de QR" class="header__img"></a></div>
             </header>
         `;
+        //Se clona el contenido del template y se lo inserta en el componente
         this.appendChild(template.content.cloneNode(true));
     }
    
 }
+// Se define el nombre de la etiqueta personalizada ('header-component') y se asocia a la clase HeaderComponent
 customElements.define('header-component',HeaderComponent);
