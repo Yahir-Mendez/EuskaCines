@@ -4,17 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EuskaCines</title>
+
+        <!-- Archivos CSS -->
         <link rel="stylesheet" href="./src/css/index.css">
         <link rel="stylesheet" href="./src/components/header/header-component.css">
         <link rel="stylesheet" href="./src/components/header/_nav.css">
-        <link rel="stylesheet" href="./src/components/footer/footer-component.css">
-
-        <link rel="stylesheet" href="./src/css/navbar.css">
+        <link rel="stylesheet" href="./src/components/header/_navbar.css">
         <link rel="stylesheet" href="./src/components/slider/slider-component.css">
-        <link rel="stylesheet" href="./src/css/carousel.css">
+        <link rel="stylesheet" href="./src/components/carousel/carousel-component.css">
         <link rel="stylesheet" href="./src/components/movie/movie-component.css">
+        
         <link rel="stylesheet" href="./src/css/pagination.css">
-    
+        <link rel="stylesheet" href="./src/components/footer/footer-component.css">
 
     </head>
     <body>
@@ -23,50 +24,51 @@
             <header-component></header-component>
         </header>
         
-        <!-- Main -->
+        <!-- Main Content -->
         <main class="main">
             <section id="slider" class="main__slider main__slider--animation">
-                <!-- Generado de forma dinamica -->
+                <!-- Generado dinámicamente -->
             </section>
 
-            <!-- posible carrusel -->
+            <!-- Carrusel -->
             <section class="main__carousel">
-                <h2 class="carousel__title">TOP TAQUILLA</h2>   
-                <!-- posiblemente las img se pasen por js -->
-                <div class="carousel__content carousel__content--slides ">
-                    <div class="carousel__card"><a href="./peliculas/p01/seleccionar-cine.html"><img src="./src/public/cartelera/movil/p01.png" alt="" class="carousel__card-img"></a></div>
-                    <div class="carousel__card"><a href="./peliculas/p05/seleccionar-cine.html"><img src="./src/public/cartelera/movil/p05.png" alt="" class="carousel__card-img"></a></div>
-                    <div class="carousel__card"><a href="./peliculas/p03/seleccionar-cine.html"><img src="./src/public/cartelera/movil/p03.png" alt="" class="carousel__card-img"></a></div>
-                    <div class="carousel__card"><a href="./peliculas/p08/seleccionar-cine.html"><img src="./src/public/cartelera/movil/p08.png" alt="" class="carousel__card-img"></a></div>
+                <h2 class="carousel__title">TOP TAQUILLA</h2>
+                <div id="carousel-container" class="carousel__content carousel__content--slides">
+                    <!-- Generado dinámicamente -->
                 </div>
             </section>
+
+            <!-- Cartelera -->
             <section class="main__billboard">
                 <h1 class="billboard__title">CARTELERA</h1>
                 <div class="billboard__filter">
                     <p class="billboard__filter-title">Filtrar</p>
-                    <div class="billboard__filter-icon"><img src="./src/public/iconos/filtro-min.svg" alt="icono de filtro" class="billboard__filter-icon-img"></div>
+                    <div class="billboard__filter-icon">
+                        <img src="./src/public/iconos/filtro-min.svg" alt="icono de filtro" class="billboard__filter-icon-img">
+                    </div>
                 </div>
-                <!-- Cards-->
                 <div id="container-billboard" class="billboard__card">
-                    <!-- Generado Dinámicamente -->
+                    <!-- Generado dinámicamente -->
                 </div>
-                <!-- paginaciones icono -->
+
+                <!-- Paginación -->
                 <div class="pagination">
                     <div class="pagination__icon"><span class="pagination__icon-num">1</span></div>
                 </div>
             </section>
         </main>
-        
-       
+
         <!-- Footer -->
         <footer>
             <footer-component></footer-component>
         </footer>
 
-        <script type="module" src="./src/js/connected.js"></script>
-        <script type="module" src="./src/components/movie/movie-component.js"></script>
-        <script type="module" src="./src/components/slider/slider-component.js"></script>
-        <script  type="module" src="./src/components/header/header-component.js"></script>
-        <script  type="module" src="./src/components/footer/footer-component.js"></script>
+        <!-- Scripts -->
+        <script defer type="module" src="./src/js/connected.js"></script>
+        <script defer type="module" src="./src/components/header/header-component.js"></script>
+        <script defer type="module" src="./src/components/slider/slider-component.js"></script>
+        <script defer type="module" src="./src/components/carousel/carousel-component.js"></script>
+        <script defer type="module" src="./src/components/movie/movie-component.js"></script>
+        <script defer type="module" src="./src/components/footer/footer-component.js"></script>
     </body>
 </html>

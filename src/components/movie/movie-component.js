@@ -1,8 +1,10 @@
 import { connected } from '../../js/connected.js';
 const data = await connected();
+//container de Card
+const container = document.getElementById('container-billboard');
+//evita modificar el DOM en cada iteación
+const fragment = document.createDocumentFragment();
 for(const key in data){
-    //container de Card
-    const container = document.getElementById('container-billboard');
     //item de card
     const item = document.createElement('div');
     item.classList.add("billboard__card-item");
@@ -17,5 +19,6 @@ for(const key in data){
     //contruir Card
     link.appendChild(img);
     item.appendChild(link);
-    container.appendChild(item);
+    fragment.appendChild(item);
 }
+container.appendChild(fragment);
