@@ -1,7 +1,6 @@
-import { connected } from './connected.js';
+import { connected } from '../../js/connected.js';
 const data = await connected();
 for(const key in data){
-    
     //container de Card
     const container = document.getElementById('container-billboard');
     //item de card

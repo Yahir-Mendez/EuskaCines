@@ -10,9 +10,9 @@
         <link rel="stylesheet" href="./src/components/footer/footer-component.css">
 
         <link rel="stylesheet" href="./src/css/navbar.css">
-        <link rel="stylesheet" href="./src/css/slider.css">
+        <link rel="stylesheet" href="./src/components/slider/slider-component.css">
         <link rel="stylesheet" href="./src/css/carousel.css">
-        <link rel="stylesheet" href="./src/css/billboard.css">
+        <link rel="stylesheet" href="./src/components/movie/movie-component.css">
         <link rel="stylesheet" href="./src/css/pagination.css">
     
 
@@ -25,35 +25,13 @@
         
         <!-- Main -->
         <main class="main">
-            <Section class="main__slider main__slider--animation">
-                <!-- Slider -->
-                <div class="container-slide">
-                    <div class="slider__image"><img src="./src/public/cartelera/movil/slider-p01.png"  alt="JOker" class="slider__image-img"></div>
-                    <h2 class="slider__title">JOKER:FOLIE A DEUX</h2>
-                    <div class="slider__box-button">
-                        <button class="slider__button"><a href="./peliculas/p01/seleccionar-cine.html">Reserva Ya</a></button>
-                    </div>
-                 </div>
-                 <div class="container-slide">
-                    <div class="slider__image"><img src="./src/public/cartelera/movil/slider-p07.png"  alt="ALIEN: ROMULUS" class="slider__image-img"></div>
-                    <h2 class="slider__title">ALIEN: ROMULUS</h2>
-                    <div class="slider__box-button">
-                        <button class="slider__button"><a href="./peliculas/p07/seleccionar-cine.html">Reserva Ya</a></button>
-                    </div>
-                 </div>
-                 
-                 <div class="container-slide">
-                    <div class="slider__image"><img src="./src/public/cartelera/movil/slider-p05.png"  alt="SMILE 2" class="slider__image-img"></div>
-                    <h2 class="slider__title">SMILE 2</h2>
-                    <div class="slider__box-button">
-                        <button class="slider__button"><a href="./peliculas/p05/seleccionar-cine.html">Reserva Ya</a></button>
-                    </div>
-                 </div>
-                
-            </Section>
+            <section id="slider" class="main__slider main__slider--animation">
+                <!-- Generado de forma dinamica -->
+            </section>
+
             <!-- posible carrusel -->
             <section class="main__carousel">
-                <h2 class="carousel__title">TOP TAQUILLA</h2>
+                <h2 class="carousel__title">TOP TAQUILLA</h2>   
                 <!-- posiblemente las img se pasen por js -->
                 <div class="carousel__content carousel__content--slides ">
                     <div class="carousel__card"><a href="./peliculas/p01/seleccionar-cine.html"><img src="./src/public/cartelera/movil/p01.png" alt="" class="carousel__card-img"></a></div>
@@ -68,7 +46,7 @@
                     <p class="billboard__filter-title">Filtrar</p>
                     <div class="billboard__filter-icon"><img src="./src/public/iconos/filtro-min.svg" alt="icono de filtro" class="billboard__filter-icon-img"></div>
                 </div>
-                <!-- Cards, posiblemente se pasen por js -->
+                <!-- Cards-->
                 <div id="container-billboard" class="billboard__card">
                     <!-- Generado Dinámicamente -->
                 </div>
@@ -86,7 +64,8 @@
         </footer>
 
         <script type="module" src="./src/js/connected.js"></script>
-        <script type="module" src="./src/js/movies.js"></script>
+        <script type="module" src="./src/components/movie/movie-component.js"></script>
+        <script type="module" src="./src/components/slider/slider-component.js"></script>
         <script  type="module" src="./src/components/header/header-component.js"></script>
         <script  type="module" src="./src/components/footer/footer-component.js"></script>
     </body>
