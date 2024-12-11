@@ -1,10 +1,10 @@
 // Importa la función 'connected' desde el archivo 'connected.js' para obtener los datos
-import { connected } from "../../js/connected.js";
+import { connectedPeliculas } from "../../js/connected.js";
 
 //se envuelve en una funcion asincrona para consumir la promesa
 const Slider = async() =>{
     // Obtiene los datos de la función 'connected()' de forma asincrónica
-    const data = await connected();
+    const data = await connectedPeliculas();
 
     // Inicializa una variable para almacenar el contenido HTML que se generará
     let htmlContent = "";
@@ -40,3 +40,4 @@ const Slider = async() =>{
     // Inserta el contenido generado dentro del contenedor con id 'slider'
     container.innerHTML = htmlContent;
 }
+Slider();

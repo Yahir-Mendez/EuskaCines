@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cines</title>
+
+        <!-- Hojas de stilos -->
+
+        <!-- Estilos generales -->
+         <link rel="stylesheet"  href="./src/css/index.css"/>
+         <!-- Header-Componen CSS -->
+        <link rel="stylesheet" href="./src/components/header/header-component.css"/>
+        <link rel="stylesheet" href="./src/components/header/_nav.css"/>
+        <link rel="stylesheet" href="./src/components/header/_navbar.css"/>
+        <!-- Footer-Component CSS-->
+        <link rel="stylesheet" href="./src/components/footer/footer-component.css"/>
+        <!-- Estilos componente gridCard -->
+        <link rel="stylesheet" href="./src/components/cines/cinesGrid-component.css">
+    </head>
+    <body>
+        
+        <header>
+            <header-component></header-component>
+        </header>
+
+        <main class="main">
+            <section class="main__cines">
+                <h1 class="cines__header-title">CINES</h1>
+                <div id="cinesGrid" class="cines__container">
+                    <!-- Generado dinamicamente -->
+                </div>
+                <div class="pagination">
+                    <div class="pagination__icon"   ><span class="pagination__icon-num">1</span></div>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <footer class="footer">
+            <footer-component></footer-component>
+        </footer>
+
+
+        <!-- Scripts -->
+        <!-- Header-Componet JS -->
+        <script defer src="./src/components/header/header-component.js"></script>
+        <!-- Footer-Component -->
+        <script defer src="./src/components/footer/footer-component.js"></script>
+        <!-- Cines Grid Component -->
+         <!-- script del componente movie -->
+        <script defer type="module" src="./src/components/cines/cinesGrid-component.js"></script>
+    </body>
+</html>

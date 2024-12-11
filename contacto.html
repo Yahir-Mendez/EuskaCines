@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="./src/public/iconos/favicom.ico" type="image/x-icon">
+    <!-- Estilos generales -->
+    <link rel="stylesheet"  href="./src/css/index.css"/>
+    <!-- Header-Componen CSS -->
+   <link rel="stylesheet" href="./src/components/header/header-component.css"/>
+   <link rel="stylesheet" href="./src/components/header/_nav.css"/>
+   <link rel="stylesheet" href="./src/components/header/_navbar.css"/>
+   <!-- Estilos de pagin contacto -->
+    <link rel="stylesheet" href="./src/css/info-card.css">
+   <!-- Footer-Component CSS-->
+   <link rel="stylesheet" href="./src/components/footer/footer-component.css"/>
+</head>
+<body>
+    <header>
+        <header-component></header-component>
+    </header>
+    <main class="main">
+        <article class="main__info-card">
+            <h2 class="info-card__title">¿Quiénes Somos?</h2>
+            <p class="info-card__description">Somos EuskaCines, una organización que gestiona los principales cines de España.</p>
+        </article>
+        <article class="main__info-card">
+            <h2 class="info-card__title">¿Quiéres Expandirte?</h2>
+            <p class="info-card__description">Si quieres promocionar tu cine y unirte a esta gran comunidad envía un correo a nuestra Administración.</p>
+            <button class="info-card__button"><img src="./src/public/iconos/mail-min.svg" alt="Icono Email" class="info-card__button-img"><a href="mailto:admin@euskacines.com">ADMIN</a></button>
+        </article>
+        <article class="main__info-card">
+            <h2 class="info-card__title">¿Tienes algo para decirnos?</h2>
+            <p class="info-card__description">Si quieres promocionar tu cine y unirte a esta gran comunidad envía un correo a nuestra Administración.</p>
+            <button class="info-card__button"><img src="./src/public/iconos/mail-min.svg" alt="Icono Email" class="info-card__button-img"><a href="mailto:info@euskacines.com">INFO</a></button>
+        </article>
+    </main>
+    <footer class="footer">
+        <footer-component></footer-component>
+    </footer>
+    
+    <!-- scripts -->
+     <!-- Componente Header -->
+    <script src="./src/components/header/header-component.js"></script>
+    <!-- Componente Footer -->
+    <script src="./src/components/footer/footer-component.js"></script>
+</body>
+</html>

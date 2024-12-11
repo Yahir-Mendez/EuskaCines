@@ -1,0 +1,111 @@
+{
+    "cine1": {
+        "cine": "cine donostia",
+        "url": "/src/public/cines/c01.png",
+        "salas": [
+          {
+            "sala": "A",
+            "horarios": [
+              {"pelicula_id": "p1", "hora": "10:00"},
+              {"pelicula_id": "p2", "hora": "12:30"},
+              {"pelicula_id": "p3", "hora": "15:00"},
+              {"pelicula_id": "p4", "hora": "17:00"}
+            ]
+          },
+          {
+            "sala": "B",
+            "horarios": [
+              {"pelicula_id": "p5", "hora": "10:30"},
+              {"pelicula_id": "p6", "hora": "13:00"},
+              {"pelicula_id": "p7", "hora": "15:30"},
+              {"pelicula_id": "p8", "hora": "18:00"}
+            ]
+          },
+          {
+            "sala": "C",
+            "horarios": [
+              {"pelicula_id": "p1", "hora": "11:00"},
+              {"pelicula_id": "p3", "hora": "13:30"},
+              {"pelicula_id": "p5", "hora": "16:00"},
+              {"pelicula_id": "p7", "hora": "18:30"}
+            ]
+          },
+          {
+            "sala": "D",
+            "horarios": [
+              {"pelicula_id": "p2", "hora": "09:30"},
+              {"pelicula_id": "p6", "hora": "12:00"},
+              {"pelicula_id": "p8", "hora": "14:30"},
+              {"pelicula_id": "p4", "hora": "17:00"}
+            ]
+          }
+        ]
+      },
+      "cine2": {
+        "cine": "cine andoain",
+        "url": "/src/public/cines/c02.png",
+        "salas": [
+          {
+            "sala": "A",
+            "horarios": [
+              {"pelicula_id": "p1", "hora": "09:00"},
+              {"pelicula_id": "p2", "hora": "11:30"},
+              {"pelicula_id": "p3", "hora": "14:00"},
+              {"pelicula_id": "p4", "hora": "16:30"}
+            ]
+          },
+          {
+            "sala": "B",
+            "horarios": [
+              {"pelicula_id": "p5", "hora": "10:00"},
+              {"pelicula_id": "p6", "hora": "12:30"},
+              {"pelicula_id": "p7", "hora": "15:00"},
+              {"pelicula_id": "p8", "hora": "17:30"}
+            ]
+          },
+          {
+            "sala": "C",
+            "horarios": [
+              {"pelicula_id": "p1", "hora": "10:30"},
+              {"pelicula_id": "p2", "hora": "13:00"},
+              {"pelicula_id": "p5", "hora": "15:30"},
+              {"pelicula_id": "p6", "hora": "18:00"}
+            ]
+          }
+        ]
+      },
+      "cine3": {
+        "cine": "cine usurbil",
+        "url": "/src/public/cines/c03.png",
+        "salas": [
+          {
+            "sala": "A",
+            "horarios": [
+              {"pelicula_id": "p1", "hora": "10:00"},
+              {"pelicula_id": "p2", "hora": "12:30"},
+              {"pelicula_id": "p3", "hora": "15:00"},
+              {"pelicula_id": "p4", "hora": "17:30"}
+            ]
+          },
+          {
+            "sala": "B",
+            "horarios": [
+              {"pelicula_id": "p5", "hora": "10:00"},
+              {"pelicula_id": "p6", "hora": "12:30"},
+              {"pelicula_id": "p7", "hora": "15:00"},
+              {"pelicula_id": "p8", "hora": "17:30"}
+            ]
+          },
+          {
+            "sala": "C",
+            "horarios": [
+              {"pelicula_id": "p1", "hora": "10:30"},
+              {"pelicula_id": "p2", "hora": "13:00"},
+              {"pelicula_id": "p5", "hora": "15:30"},
+              {"pelicula_id": "p6", "hora": "18:00"}
+            ]
+          }
+        ]
+      }
+  }
+  

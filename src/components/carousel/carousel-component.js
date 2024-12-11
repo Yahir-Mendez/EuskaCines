@@ -1,7 +1,7 @@
-import { connected } from '../../js/connected.js'; // Importa los datos del archivo connected.js
+import { connectedPeliculas } from '../../js/connected.js'; // Importa los datos del archivo connected.js
 
 const Carousel = async() =>{ //se envuelve en una funcion asincrona para consumir la promesa
-    const data = await connected(); // Asigna el retorno de connected() (una promesa) a la constante data
+    const data = await connectedPeliculas(); // Asigna el retorno de connected() (una promesa) a la constante data
     // Se obtiene un arreglo con las claves del objeto 'data' y se limita a las primeras 6 claves
     const keys = Object.keys(data).slice(0, 6); // Asigna las primeras 6 claves del objeto data a 'keys'
 
