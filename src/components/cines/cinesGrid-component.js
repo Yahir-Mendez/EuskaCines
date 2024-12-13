@@ -1,19 +1,27 @@
 import { connectedCines } from "../../js/connected.js";
+import activeCine from "../../js/selectedCine.js";
 
+const isSelectedMovie = JSON.parse(localStorage.getItem("movie")) || null;
 
 const Cines = async () => {
     // Obtiene los datos de los cines a través de la función connectedCines
     const data = await connectedCines();
-
+    let urlLink="";
+    if(isSelectedMovie!=null){
+        urlLink = "src/pages/Pelicula.html";
+    }else{
+        urlLink = "src/pages/SelectPelicula.html";
+    }
     // Selecciona el contenedor principal donde se agregarán las tarjetas de cines
     const container = document.getElementById("cinesGrid");
     const fragment = document.createDocumentFragment(); // Se utiliza un fragmento para evitar reflow en el DOM
     
-    // Itera sobre las claves del objeto de datos
+  
     for (let key in data) {
         // Crea un contenedor individual para cada cine
         const item = document.createElement('div'); // Se crea un nodo 'div' para cada tarjeta
-        item.classList.add("cines__container-item"); // Se asigna la clase para los estilos CSS del contenedor
+        item.classList.add("cines__container-item");
+        item.setAttribute("id",key); // Se asigna la clase para los estilos CSS del contenedor
 
         // Crea un título para mostrar el nombre del cine
         const title = document.createElement('h2'); // Nodo 'h2' para el nombre del cine
@@ -23,7 +31,7 @@ const Cines = async () => {
 
         // Crea un enlace (etiqueta 'a') que envolverá la imagen y el título
         const link = document.createElement('a'); // Se crea un nodo 'a' para el enlace a la página de detalle
-        link.setAttribute("href", "/cine.html"); // Se asigna la ruta al enlace
+        link.setAttribute("href", urlLink); // Se asigna la ruta al enlace
 
         link.appendChild(title); // Inserta el título dentro del enlace
 
@@ -42,5 +50,12 @@ const Cines = async () => {
     container.appendChild(fragment);
 };
 
-// Llama a la función principal para renderizar las tarjetas de cines
-Cines();
+const initializeApp = async () => {
+    await Cines(); // Espera a que se rendericen las tarjetas
+    activeCine();           // Llama a la función que asigna eventos
+};
+
+initializeApp();
+
+
+

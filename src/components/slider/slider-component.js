@@ -25,9 +25,9 @@ const Slider = async() =>{
                 <!-- Título de la película -->
                 <h2 class="slider__title">${data[key].nombre.toUpperCase()}</h2>
                 <!-- Caja con el botón de reserva -->
-                <div class="slider__box-button">
+                <div class="slider__box-button CardItem" id="${key}">
                     <button class="slider__button">
-                        <a href="./peliculas/p01/seleccionar-cine.html">Reserva Ya</a>
+                        <a href="/src/pages/pelicula.html">Reserva Ya</a>
                     </button>
                 </div>
             </div>

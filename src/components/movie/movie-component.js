@@ -19,7 +19,7 @@ export const MoviesGrid = async () => { // Se envuelve en una función asincrón
         // Crea un enlace (etiqueta 'a') para cada tarjeta
         const link = document.createElement('a'); // Se crea un nodo 'a' (enlace)
        
-        link.setAttribute("href", "/src/pages/pelicula.html"); // Se asigna el atributo 'href' con el enlace a la página de detalle de cine
+        link.setAttribute("href", "/cines.html"); // Se asigna el atributo 'href' con el enlace a la página de detalle de cine
 
         // Crea la imagen para cada tarjeta
         const img = document.createElement('img'); // Se crea un nodo 'img' para mostrar la imagen

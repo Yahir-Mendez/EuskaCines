@@ -19,21 +19,21 @@ class HeaderComponent extends HTMLElement {
                     </div>
                     <!-- Opciones -->
                     <ul class="navbar__menu">
-                        <li class="navbar__menu-item"><a href="index.html" class="navbar__link">Inicio</a></li>
-                        <li class="navbar__menu-item"><a href="cines.html" class="navbar__link">Cines</a></li>
-                        <li class="navbar__menu-item"><a href="contacto.html" class="navbar__link">Contacto</a></li>
+                        <li class="navbar__menu-item"><a href="/index.html" class="navbar__link">Inicio</a></li>
+                        <li class="navbar__menu-item"><a href="/cines.html" class="navbar__link">Cines</a></li>
+                        <li class="navbar__menu-item"><a href="/contacto.html" class="navbar__link">Contacto</a></li>
                     </ul>
                 </nav>
                 <!-- Icono Menu -->
                 <div class="header__menu-icon"><a href="#activeNav"><img src="/src/public/iconos/Menu-min.svg" alt="icono de menu" class="header__img"></a></div>
                 <!-- Logo -->
-                <div class="header__logo"><a href="index.html"><img src="/src/public/iconos/logo.png" alt="logo" class="header__img"></a></div>
+                <div class="header__logo"><a href="/index.html"><img src="/src/public/iconos/logo.png" alt="logo" class="header__img"></a></div>
 
                 <!-- nav pc -->
                 <ul class="navbar__menuPC">
-                    <li class="navbar__item"><a class="navbar__item-link" href="index.html">Inicio</a></li>
-                    <li class="navbar__item"><a class="navbar__item-link" href="cines.html">Cines</a></li>
-                    <li class="navbar__item"><a class="navbar__item-link" href="contacto.html">Contacto</a></li>
+                    <li class="navbar__item"><a class="navbar__item-link" href="/index.html">Inicio</a></li>
+                    <li class="navbar__item"><a class="navbar__item-link" href="/cines.html">Cines</a></li>
+                    <li class="navbar__item"><a class="navbar__item-link" href="/contacto.html">Contacto</a></li>
                 </ul>
 
                 <!-- QR -->

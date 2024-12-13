@@ -1,0 +1,158 @@
+
+/* Hoja de estilos secundaria - modificadora */
+/* De esta Hoja se modifican distintas páginas, reutilizando estilos */
+
+/* SLIDER para la página de seleccionar entrada/horario*/
+.main__slider{
+    height: 15rem;
+}
+/* box solo para contener y ajustar el contenido*/
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/*grid de los tiket(entradas) */
+.billboard__card{
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 7rem)); 
+}
+/* Con tiket me refiero a los horarios en la grid, los cuales que los utilizo como la entrada en si.
+ no hay mucha realción con lo que consideramos un tiket en si pero ocupaba llamarlo con un nombre distindo */
+.tiket{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border:1px solid var(--colorTwo);
+    background-color: rgba(255, 0, 0, 0.241);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.tiket__info{
+    line-height: 2rem;
+    text-align: center;
+    color: var(--colorThree);
+    
+}
+.billboard__card-item{
+    height: 5rem;
+}
+
+
+
+/* Formulario*/
+.main--despedida {
+    height: auto;
+    justify-content: center;
+    height: 35rem;
+}
+.form__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    
+}
+.info-card__button{
+    margin: 0;
+    align-self:center;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--colorThree);
+    font-family: var(--fontOne);
+    padding: 1rem;
+}
+
+#name,#telephone,#numCard{
+    color: var(--colorOne);
+    border: none;
+    border-radius: 15px;
+    height: 3rem;
+    width: 10rem;
+    background-color: var(--colorThree);
+    padding:1rem;
+    font-family: var(--fontOne);
+    font-size: 1em;
+}
+label{
+    text-align: center;
+}
+#horario{
+    display: none;
+}
+#horario:target{
+    display: block;
+}
+#horario:target + #fecha{
+    display: none;
+}
+.card-item--itemH{
+    padding: 0 !important;
+   
+}
+.tiket--hora{
+    background-color:var(--colorThree);
+}
+.tiket--hora>*{
+    color:var(--colorTwo);
+}
+.info-card__title--infoPeli,.info-card__title--infoPeli+p{
+    text-align: start;
+}
+.info-card__title--infoPeli{
+    color: var(--colorTwo);
+    border: none;
+    justify-content: start;
+}
+.main__info-card--detallesPeli{
+    align-items: start;
+}
+/* breakpoint para pantallas medianas*/
+@media screen and (min-width:768px) {
+    .main{
+        gap: 1rem;
+    }
+    .main__slider{
+        height: 30rem;
+    }
+    .box{
+        gap: 0rem;
+    }
+}
+/* breakpoint para pantallas grandes */
+@media screen and (min-width:1024px) {
+    .main{
+        flex-direction: column;
+    }
+    .main__slider{
+        height: 20rem;
+    }
+    .slider__image-img{
+        object-position:center;
+    }
+    .box{
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .info-card__description{
+        width: 550px;
+        text-align: center;
+    }
+    #name,#telephone,#numCard{
+        width: 25rem;
+        font-size: 1.5rem;
+    }
+    .main__info-card{
+        align-self: center;
+    }
+    .main__info-card--cine{
+        align-self: start;
+    }
+}
+
