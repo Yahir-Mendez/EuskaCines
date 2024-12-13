@@ -1,50 +1,58 @@
-import { connectedPeliculas } from '../../js/connected.js'; // Importa la función 'connected' desde el archivo 'connected.js' para obtener los datos
-import active from '../../js/selectedPelicula.js';
+import { connectedPeliculas } from '../../js/connected.js'; // Importa la función 'connectedPeliculas' que retorna los datos de películas.
+import active from '../../js/selectedPelicula.js'; // Importa la función 'active' para asignar eventos a las películas.
 
+ // Verifica si hay una película seleccionada en el localStorage
+ const isSelectedCine = JSON.parse(localStorage.getItem("cine")) || null;
 
-export const MoviesGrid = async () => { // Se envuelve en una función asincrónica para consumir la promesa retornada por 'connected'
-   const container = document.getElementById("container-billboard");
-    const data = await connectedPeliculas();
-    // Crea un fragmento de documento que se utilizará para evitar modificaciones innecesarias del DOM en cada iteración
-    const fragment = document.createDocumentFragment(); // Se crea un fragmento de documento para agregar los elementos sin modificar el DOM directamente
+export const MoviesGrid = async () => { 
+    // Obtiene el contenedor principal donde se agregarán las tarjetas de películas
+    const container = document.getElementById("container-billboard");
 
-    // Itera sobre cada clave del objeto 'data' (cada película)
-    for (const key in data) { 
-        // Crea un contenedor 'div' para cada tarjeta
-        const item = document.createElement('div'); // Se crea un nodo 'div' para contener cada tarjeta
-        item.classList.add("billboard__card-item");
-        item.classList.add("CardItem");
-        item.setAttribute("id", `${key}`);
-
-        // Crea un enlace (etiqueta 'a') para cada tarjeta
-        const link = document.createElement('a'); // Se crea un nodo 'a' (enlace)
-       
-        link.setAttribute("href", "/cines.html"); // Se asigna el atributo 'href' con el enlace a la página de detalle de cine
-
-        // Crea la imagen para cada tarjeta
-        const img = document.createElement('img'); // Se crea un nodo 'img' para mostrar la imagen
-        img.classList.add("billboard__card-item-img");
-       
-        img.setAttribute("src", `${data[key].url}`); // Se asigna la URL de la imagen obtenida de 'data[key].url'
-
-        // Construcción de la tarjeta:
-        // Inserta la imagen dentro del enlace
-        link.appendChild(img); 
-        // Inserta el enlace dentro del contenedor 'item' (que es el contenedor de la tarjeta)
-        item.appendChild(link); 
-        // Agrega el contenedor de la tarjeta 'item' al fragmento para acumularlo antes de insertarlo en el DOM
-        fragment.appendChild(item); 
+    // Determina la ruta de enlace dependiendo si hay un cine  seleccionado
+    let urlLink = "";
+    if (isSelectedCine != null) {
+        urlLink = "/src/pages/Pelicula.html"; // Si hay un cine seleccionado, dirige a la página de detalle
+    } else {
+        urlLink = "/cines.html"; // Si no, redirige a seleccionar a cine
     }
 
-    // Finalmente, se inserta todo el fragmento (que contiene todas las tarjetas generadas) dentro del contenedor principal
-    container.appendChild(fragment); // Se inserta el fragmento completo dentro del contenedor con id 'container-billboard'
-}
+    // Llama a la función 'connectedPeliculas' y espera a que retorne los datos de las películas
+    const data = await connectedPeliculas();
 
+    // Crea un fragmento de documento para evitar múltiples reflows en el DOM durante las iteraciones
+    const fragment = document.createDocumentFragment(); 
 
-// Asegurarse de que 'active' se llama después de que 'MoviesGrid' haya terminado
-const initializeApp = async () => {
-    await MoviesGrid(); // Espera a que se rendericen las tarjetas
-    active();           // Llama a la función que asigna eventos
+    // Itera sobre cada clave en el objeto 'data', donde cada clave representa una película
+    for (const key in data) { 
+        // Crea el contenedor principal de la tarjeta
+        const item = document.createElement('div'); 
+        item.classList.add("billboard__card-item"); // Clase CSS para los estilos de la tarjeta
+        item.classList.add("CardItem"); // Clase adicional para funcionalidad o estilos
+        item.setAttribute("id", `${key}`); // Asigna un id único a cada tarjeta basado en la clave
+
+        // Crea un enlace (<a>) que contendrá la imagen y redireccionará a la página de cines
+        const link = document.createElement('a'); 
+        link.setAttribute("href", urlLink); //  Asigna la ruta correspondiente al enlace
+
+        // Crea una imagen para mostrar la portada de la película
+        const img = document.createElement('img'); 
+        img.classList.add("billboard__card-item-img"); // Clase CSS para el tamaño y estilos de la imagen
+        img.setAttribute("src", `${data[key].url}`); // Establece la URL de la imagen a partir de los datos
+
+        // Construye la estructura de la tarjeta
+        link.appendChild(img);    // Inserta la imagen dentro del enlace
+        item.appendChild(link);   // Inserta el enlace dentro del contenedor de la tarjeta
+        fragment.appendChild(item); // Agrega la tarjeta completa al fragmento
+    }
+
+    // Inserta el fragmento completo en el contenedor principal del DOM
+    container.appendChild(fragment);
 };
 
-initializeApp();
+// Función principal para inicializar la app
+const initializeApp = async () => {
+    await MoviesGrid(); // Espera a que las tarjetas se rendericen
+    active();           // Llama a la función 'active' para asignar eventos a las tarjetas
+};
+
+initializeApp(); // Llama a la función que inicia la aplicación

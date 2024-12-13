@@ -1,37 +1,41 @@
-import { connectedPeliculas } from '../../js/connected.js'; // Importa los datos del archivo connected.js
+import { connectedPeliculas } from '../../js/connected.js'; // Importa los datos de películas desde el archivo connected.js
 
-const Carousel = async() =>{ //se envuelve en una funcion asincrona para consumir la promesa
-    const data = await connectedPeliculas(); // Asigna el retorno de connected() (una promesa) a la constante data
-    // Se obtiene un arreglo con las claves del objeto 'data' y se limita a las primeras 6 claves
-    const keys = Object.keys(data).slice(0, 6); // Asigna las primeras 6 claves del objeto data a 'keys'
+const Carousel = async () => { 
+    // Función asincrónica que consume la promesa y obtiene los datos
+    const data = await connectedPeliculas(); // Recupera el objeto de datos con las películas
 
-    const container = document.getElementById("carousel-container"); // Se asigna el contenedor donde se insertarán los elementos generados
-    const fragment = document.createDocumentFragment(); // Crea un fragmento de documento para evitar modificaciones innecesarias del DOM
+    // Obtiene un arreglo con las claves del objeto 'data' y toma solo las primeras 6 claves
+    const keys = Object.keys(data).slice(0, 6); 
 
-    // Itera sobre cada una de las claves en 'keys'
+    // Selecciona el contenedor principal donde se insertarán las tarjetas del carrusel
+    const container = document.getElementById("carousel-container"); 
+    // Crea un DocumentFragment para construir los elementos en memoria y evitar múltiples repintados del DOM
+    const fragment = document.createDocumentFragment(); 
+
+    // Itera sobre las claves seleccionadas (las primeras 6 del objeto data)
     for (let key of keys) { 
-        // Crea un nuevo contenedor de tarjeta
-        const item = document.createElement('div'); // Crea un nodo 'div' para contener cada tarjeta
-        item.classList.add("carousel__card"); // Se le asigna la clase CSS 'carousel__card' para aplicar los estilos
+        // Crea un contenedor 'div' para la tarjeta individual
+        const item = document.createElement('div'); 
+        item.classList.add("carousel__card"); // Asigna la clase CSS para aplicar estilos de tarjeta
 
-        // Crea el enlace de la tarjeta
-        const link = document.createElement('a'); // Crea un nodo 'a' (enlace)
-        link.setAttribute("href", "/cine.html"); // Se asigna el atributo 'href' para redirigir al usuario cuando haga clic
+        // Crea un enlace que redirige al usuario a la página de detalle
+        const link = document.createElement('a'); 
+        link.setAttribute("href", "/cine.html"); // Establece el enlace de navegación de la tarjeta
 
-        // Crea la imagen de la tarjeta
-        const img = document.createElement('img'); // Crea un nodo 'img' para mostrar una imagen
-        img.classList.add("carousel__card-img"); // Se le asigna una clase CSS para aplicar los estilos a la imagen
-        img.setAttribute("src", `${data[key].url}`); // Se asigna la URL de la imagen obtenida de 'data[key].url'
+        // Crea una imagen y le asigna la URL correspondiente del objeto data
+        const img = document.createElement('img'); 
+        img.classList.add("carousel__card-img"); // Aplica estilos CSS específicos para la imagen
+        img.setAttribute("src", `${data[key].url}`); // Inserta la URL de la imagen desde la propiedad 'url'
 
-        // Construir la tarjeta (construir la estructura HTML de la tarjeta)
-        link.appendChild(img); // Inserta la imagen dentro del enlace
-        item.appendChild(link); // Inserta el enlace dentro del contenedor de la tarjeta (item)
-        fragment.appendChild(item); // Añade el contenedor de la tarjeta (item) al fragmento
+        // Construye la estructura de la tarjeta: inserta la imagen en el enlace y el enlace en el contenedor de la tarjeta
+        link.appendChild(img); 
+        item.appendChild(link); 
+        fragment.appendChild(item); // Añade la tarjeta completa al fragmento
     }
 
-    // Finalmente, se inserta todo el fragmento (con las tarjetas generadas) dentro del contenedor principal
-    container.appendChild(fragment); // Inserta el fragmento completo dentro del contenedor con id 'carousel-container'
-} 
+    // Inserta el fragmento completo en el contenedor principal del carrusel
+    container.appendChild(fragment); 
+};
 
-Carousel(); // se llama a la funcion
-
+// Llama a la función para inicializar el carrusel en la página
+Carousel(); 
