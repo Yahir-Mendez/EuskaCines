@@ -19,7 +19,7 @@ const slider2 = (src, nombre) => {
     const sliderImg = document.getElementById("slider2-image");
 
     // Se obtiene el elemento del título en el slider
-    const sliderTitle = document.getElementById("slider2-title"); // Se corrige el typo en el id 'slider2-title'
+    const sliderTitle = document.getElementById("slider2-title");
 
     // Actualiza la imagen del slider con la URL proporcionada
     sliderImg.setAttribute("src", src);
@@ -35,7 +35,7 @@ const infoPelis = (duracion, actores, genero, directores, descripcion) => {
     duracionParrafo.innerText = duracion; // Duración de la película
 
     const actoresParrafo = document.getElementById("actoresParrafo");
-    actoresParrafo.innerText = actores; // Actores principales
+    actoresParrafo.innerText = actores; // Actores de la película
 
     const generoParrafo = document.getElementById("generoParrafo");
     generoParrafo.innerText = genero; // Género de la película
@@ -45,9 +45,7 @@ const infoPelis = (duracion, actores, genero, directores, descripcion) => {
 
     const descripcionParrafo = document.getElementById("descripcionParrafo");
     descripcionParrafo.innerText = descripcion; // Descripción de la película
-}
+};
 
-// Se ejecuta la función 'peliculaInfo' cuando el contenido del DOM está completamente cargado
-document.addEventListener('DOMContentLoaded', () => {
-    peliculaInfo();
-});
+// Llama a la función principal para mostrar la información de la película
+peliculaInfo();

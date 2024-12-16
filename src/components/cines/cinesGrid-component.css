@@ -27,6 +27,10 @@
 .cines__container-item{
     height: auto;
     position: relative;
+
+}
+.cines__container-item a{
+    display: block;
 }
 .cines__container-item-img{
     width: 100%;
