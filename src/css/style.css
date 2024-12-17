@@ -68,13 +68,19 @@ a,.btnLink{
     font-family: var(--fontOne);
     padding: 1rem;
 }
+.dataDescription{
+    color: var(--colorTwo);
+}
+.dataDescription>span{
+    color: var(--colorThree);
+}
 
-#email,#telephone,#numCard{
+#ticketCode,#email,#telephone,#numCard{
     color: var(--colorOne);
     border: none;
     border-radius: 15px;
     height: 3rem;
-    width: 10rem;
+    width: 15rem;
     background-color: var(--colorThree);
     padding:1rem;
     font-family: var(--fontOne);
@@ -117,6 +123,7 @@ label{
 .star{
     color: yellow;
     font-size: 3em;
+    cursor: pointer;
 }
 
 /* breakpoint para pantallas medianas*/

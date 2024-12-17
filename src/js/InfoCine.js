@@ -61,6 +61,7 @@ const horarios = (salas) => {
 
         // Filtra los horarios de la película seleccionada
         let h = filterPelis(hour);
+        
         // Si hay horarios disponibles
         if (h != null) {
             // Crea los elementos necesarios para representar la tarjeta del horario
@@ -87,6 +88,11 @@ const horarios = (salas) => {
             link.appendChild(boxCard);
             boxContainer.appendChild(link);
             fragment.appendChild(boxContainer);
+
+            // Añade un evento 'click' que guarda la sala y hora seleccionada en el localStorage
+            link.addEventListener('click', () => {
+                localStorage.setItem('SalaHora', JSON.stringify({ sala: s, hora: h.hora }));
+            });
         }
     });
 

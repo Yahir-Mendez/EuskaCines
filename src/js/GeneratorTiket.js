@@ -1,3 +1,4 @@
+import { getHash } from './hashTiket.js';
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.form__info');
 
@@ -23,10 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Hash:', hash);
 
             // Obtener los últimos 6 dígitos del hash
-            const ticketPrefix = hash.slice(-6);
+            const codeTiketCine = hash.slice(-7);
 
-            // Generar el código del ticket
-            const ticketCode = `${ticketPrefix}-${Math.floor(10 + Math.random() * 90)}-${Math.floor(10 + Math.random() * 90)}`;
+             // Derivar los dos números decimales de otras partes del hash
+            const decimalPart1 = parseInt(hash.slice(0, 2), 16) % 90 + 10; 
+            const decimalPart2 = parseInt(hash.slice(2, 4), 16) % 90 + 10; 
+            // Formar el código del ticket
+            const ticketCode = `${codeTiketCine}-${decimalPart1}-${decimalPart2}`;
+           
 
             // Crear el objeto tiket
             const tiket = {
@@ -47,19 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mostrar los datos del ticket en tiket.html
     const tiketData = JSON.parse(localStorage.getItem('tiket'));
+    const horarioSala = JSON.parse(localStorage.getItem('SalaHora'));
+    const cine = JSON.parse(localStorage.getItem('cine'));
     if (tiketData) {
         document.getElementById('ticket-email').textContent = tiketData.email;
         document.getElementById('ticket-telephone').textContent = tiketData.telephone;
+        document.getElementById('cineName').textContent = cine.cine;
         document.getElementById('ticket-movieName').textContent = tiketData.movieName;
         document.getElementById('ticket-date').textContent = tiketData.date;
         document.getElementById('ticket-code').textContent = tiketData.ticketCode;
+        document.getElementById('ticket-horarioSala').textContent = horarioSala.hora + ' - Sala ' + horarioSala.sala;
     }
 });
 
-const getHash = async function (input) {
-    const textAsBuffer = new TextEncoder().encode(input);
-    const hashBuffer = await window.crypto.subtle.digest("SHA-256", textAsBuffer);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    const hash = hashArray.map((item) => item.toString(16).padStart(2, "0")).join("");
-    return hash;
-};

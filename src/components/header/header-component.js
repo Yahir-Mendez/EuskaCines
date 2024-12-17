@@ -68,12 +68,8 @@ class HeaderComponent extends HTMLElement {
                     </li>
                 </ul>
 
-                <!-- Enlace con código QR -->
-                <div class="header__qr">
-                    <a href="promos.html">
-                        <img src="/src/public/iconos/QR-min.svg" alt="icono de QR" class="header__img">
-                    </a>
-                </div>
+               
+                
             </header>
         `;
 
