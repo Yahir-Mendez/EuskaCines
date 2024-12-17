@@ -45,6 +45,29 @@ const infoPelis = (duracion, actores, genero, directores, descripcion) => {
 
     const descripcionParrafo = document.getElementById("descripcionParrafo");
     descripcionParrafo.innerText = descripcion; // Descripción de la película
+
+     // Mostrar la valoración de la película con estrellitas
+     const valoracionContainer = document.getElementById('valoracionPelicula');
+     valoracionContainer.innerHTML = ''; // Limpiar contenido previo
+     for (let i = 0; i < Data.valoracion; i++) {
+         const star = document.createElement('span');
+         star.classList.add('star');
+         star.textContent = '★';
+         const contain = document.createElement('a');
+         contain.setAttribute('href', '/src/pages/valoracion.html');
+         contain.appendChild(star);
+         valoracionContainer.appendChild(contain);
+         
+     }
+     for (let i = Data.valoracion; i < 5; i++) {
+         const star = document.createElement('span');
+         star.classList.add('star');
+         star.textContent = '☆';
+         const contain = document.createElement('a');
+         contain.setAttribute('href', '/src/pages/valoracion.html');
+         contain.appendChild(star);
+         valoracionContainer.appendChild(contain);
+     }
 };
 
 // Llama a la función principal para mostrar la información de la película

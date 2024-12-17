@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="shortcut icon" href="../public/iconos/favicom.ico" type="image/x-icon">
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- Estilos del componente header -->
+    <link rel="stylesheet" href="../components/header/header-component.css"/>
+    <link rel="stylesheet" href="../components/header/_nav.css"/>
+    <link rel="stylesheet" href="../components/header/_navbar.css"/>
+    <!-- Estilos del componente footer -->
+    <link rel="stylesheet" href="../components/footer/footer-component.css">
+   <link rel="stylesheet" href="../css/info-card.css"> 
+    <!-- Estilos específicos de la página de pago -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <header-component></header-component>
+    </header>
+    <main class="main">
+        <!-- Formulario de Pago -->
+        <section class="main--despedida">
+            <div class="form__info">
+                <h2 class="info-card__title">Datos del Ticket</h2>
+                <p class="info-card__description">Email: <span id="ticket-email"></span></p>
+                <p class="info-card__description">Teléfono: <span id="ticket-telephone"></span></p>
+                <p class="info-card__description">Película: <span id="ticket-movieName"></span></p>
+                <p class="info-card__description">Fecha y Hora: <span id="ticket-date"></span></p>
+                <p class="info-card__description">Código del Ticket: <span id="ticket-code"></span></p>
+            </div>
+        </section>
+        </main>
+
+     
+    <footer class="footer">
+        <footer-component></footer-component>
+    </footer>
+
+    <!-- Scripts -->
+    <script defer type="module" src="../js/index.js"></script> <!-- Script principal -->
+    <!-- Componente Header -->
+    <script defer type="module" src="../components/header/header-component.js"></script>
+    <!-- Componente Footer -->
+    <script defer type="module" src="../components/footer/footer-component.js"></script>
+    <!-- Script para manejar el formulario de pago -->
+    <script defer type="module" src="../js/GeneratorTiket.js"></script>
+</body>
+</html>

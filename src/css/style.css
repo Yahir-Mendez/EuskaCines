@@ -62,14 +62,14 @@
     align-self:center;
     padding: 0;
 }
-a{
+a,.btnLink{
     text-decoration: none;
     color: var(--colorThree);
     font-family: var(--fontOne);
     padding: 1rem;
 }
 
-#name,#telephone,#numCard{
+#email,#telephone,#numCard{
     color: var(--colorOne);
     border: none;
     border-radius: 15px;
@@ -113,6 +113,12 @@ label{
 .main__info-card--detallesPeli{
     align-items: start;
 }
+
+.star{
+    color: yellow;
+    font-size: 3em;
+}
+
 /* breakpoint para pantallas medianas*/
 @media screen and (min-width:768px) {
     .main{

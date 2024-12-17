@@ -70,7 +70,7 @@ const horarios = (salas) => {
 
             // Enlace vacío (puede ser actualizado con funcionalidad real)
             const link = document.createElement('a');
-            link.setAttribute("href", "#");
+            link.setAttribute("href", "/src/pages/pago.html");
 
             // Contenedor de la información del horario
             const boxCard = document.createElement('div');
