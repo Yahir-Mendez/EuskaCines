@@ -28,9 +28,9 @@
             <label for="email" class="info-card__description">Email</label>
             <input type="email" required id="email" class="info-card__description">
             <label for="telephone" class="info-card__description">Teléfono</label>
-            <input type="number" min="8" required id="telephone" class="info-card__description">
+            <input type="number" pattern="[0-9]{8,10}" title="caracteres: max=10 min=8" required id="telephone" class="info-card__description">
             <label for="numCard" class="info-card__description">Número de Tarjeta</label>
-            <input type="number" min="8" required id="numCard">
+            <input type="number" pattern="[0-9]{8,12}" title="caracteres: max=12 min=8" required id="numCard">
             <button type="submit" class="info-card__button btnLink">Pagar 15€</button>
         </form>       
     </main>
