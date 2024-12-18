@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="./src/public/iconos/favicom.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/index.css"> <!--Estilos generales-->
+    <link rel="stylesheet" href="./src/css/info-card.css">
+    <!--Estilos del componente header-->
+    <link rel="stylesheet" href="./src/components/header/header-component.css">
+    <link rel="stylesheet" href="./src/components/header/_nav.css">
+    <link rel="stylesheet" href="./src/components/header/_navbar.css">
+    <!--Estilos estilos del componente footer-->
+    <link rel="stylesheet" href="./src/components/footer/footer-component.css">
+</head>
+<body>
+        <!-- Archivos CSS -->
+            
+
+    <!-- Header -->
+    <header>
+        <!-- componente header -->
+        <header-component></header-component>
+    </header>
+    <main class="main">
+        <article class="main__info-card">
+            <h2 class="info-card__title">Disfruta del Menu Mcdonald´s</h2>
+            <p class="info-card__description">Por tan solo 10 euros llevate este menu indivudual para disfrutar del gran estreno de <strong>SMILE 2</strong></p>
+            <p class="info-card__description">Solamente por la compra de dos entradas</p>
+            <p class="info-card__description">Promoción valida solo para el 20 de noviembre</p>
+
+            <div><img src="./src/public/promos/macdonald.png" alt="macdonald promo" width="150rem"></div>
+        </article>
+    </main>
+         <!-- padre del compnente Footer -->
+    <footer class="footer">
+         <footer-component></footer-component>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- script global -->
+    <script defer type="module" src="./src/js/index.js"></script>
+    <!-- script del componente header -->
+    <script defer type="module" src="./src/components/header/header-component.js"></script>
+    <!-- script del componente footer -->
+    <script defer type="module" src="./src/components/footer/footer-component.js"></script>
+</body>
+</html>

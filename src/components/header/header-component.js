@@ -68,8 +68,12 @@ class HeaderComponent extends HTMLElement {
                     </li>
                 </ul>
 
-               
-                
+                <!-- Enlace promo -->
+                <div class="header__qr">
+                    <a href="/promociones.html">
+                        <img src="/src/public/iconos/promocion.png" alt="icono de promocion" class="header__img">
+                    </a>
+                </div>
             </header>
         `;
 

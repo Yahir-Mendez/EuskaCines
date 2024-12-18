@@ -103,10 +103,10 @@ label{
    
 }
 .tiket--hora{
-    background-color:var(--colorThree);
+    background-color:var(--colorTwo);
 }
 .tiket--hora>*{
-    color:var(--colorTwo);
+    color:var(--colorThree);
 }
 .info-card__title--infoPeli,.info-card__title--infoPeli+p{
     text-align: start;
