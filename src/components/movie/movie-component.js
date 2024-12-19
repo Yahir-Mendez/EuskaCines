@@ -38,7 +38,9 @@ export const MoviesGrid = async () => {
         const img = document.createElement('img'); 
         img.classList.add("billboard__card-item-img"); // Clase CSS para el tamaño y estilos de la imagen
         img.setAttribute("src", `${data[key].url}`); // Establece la URL de la imagen a partir de los datos
-
+        img.setAttribute("alt", `${data[key].nombre}`); // Se Inserta el nombre como atributo de alt
+        img.setAttribute("width","150"); //asigna explicitamente un width ( para mejorar SEO )
+        img.setAttribute("height","150"); //asigna explicitamente un height ( para mejorar SEO )
         // Construye la estructura de la tarjeta
         link.appendChild(img);    // Inserta la imagen dentro del enlace
         item.appendChild(link);   // Inserta el enlace dentro del contenedor de la tarjeta

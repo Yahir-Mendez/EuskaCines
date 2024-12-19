@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         text.classList.add("tiket__info");
         // Establece el texto del 'span' con la fecha y el mes
         text.innerText = date + " " + "Diciembre";
-        console.log(date); // Imprime la fecha en la consola para depuración
 
         // Ensambla la estructura del enlace: añade el 'span' al contenedor y el contenedor al enlace
         dateContainer.appendChild(text);

@@ -24,6 +24,11 @@ const slider2 = (src, nombre) => {
     // Actualiza la imagen del slider con la URL proporcionada
     sliderImg.setAttribute("src", src);
 
+    // Actualiza el alt de la imgen con el nombre de la pelicula
+    sliderImg.setAttribute("alt",nombre);
+
+    sliderImg.setAttribute("width","150px"); //asigna explicitamente un width ( para mejorar SEO )
+
     // Actualiza el título del slider con el nombre de la película (en mayúsculas)
     sliderTitle.textContent = nombre;
 };

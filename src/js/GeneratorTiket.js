@@ -1,6 +1,6 @@
 import { getHash } from './hashTiket.js';
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('.form__info');
+    const form = document.getElementById('formularioPago');
 
     if (form) {
         form.addEventListener('submit', async (event) => {

@@ -46,7 +46,11 @@ a{
     align-self: start;
     cursor: pointer;
 }
-
+.promo-img{
+    width: 10rem;
+    border-radius:25px;
+    box-shadow:5px 7px 15px var(--colorTwo)
+}
 
 @media screen and (min-width:768px){
     .main__info-card{

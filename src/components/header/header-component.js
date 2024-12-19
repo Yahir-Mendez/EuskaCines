@@ -15,14 +15,14 @@ class HeaderComponent extends HTMLElement {
                         <!-- Buscador -->
                         <div class="navbar__search">
                             <div class="search__icon">
-                                <img src="/src/public/iconos/search-min.svg" alt="icono de buscador" class="search__icon-img">
+                                <img src="/src/public/iconos/search-min.svg" width="150" height="auto" alt="icono de buscador" class="search__icon-img">
                             </div>
                             <input class="search__input" type="text" placeholder="Buscar">
                         </div>
                         <!-- Menú para dispositivos pequeños -->
                         <div class="navbar__menu-icon" id="#disableNav">
                             <a href="#diableNav">
-                                <img src="/src/public/iconos/Menu-min.svg" alt="icono de menu" class="navbar__menu-icon">
+                                <img src="/src/public/iconos/Menu-min.svg" width="150" height="auto" alt="icono de menu" class="navbar__menu-icon">
                             </a>
                         </div>
                     </div>
@@ -44,14 +44,14 @@ class HeaderComponent extends HTMLElement {
                 <!-- Ícono del menú para activar navegación -->
                 <div class="header__menu-icon">
                     <a href="#activeNav">
-                        <img src="/src/public/iconos/Menu-min.svg" alt="icono de menu" class="header__img">
+                        <img src="/src/public/iconos/Menu-min.svg" width="150" height="auto" alt="icono de menu" class="header__img">
                     </a>
                 </div>
 
                 <!-- Logo principal -->
                 <div class="header__logo">
                     <a href="/index.html">
-                        <img src="/src/public/iconos/logo.png" alt="logo" class="header__img">
+                        <img src="/src/public/iconos/logo.png" width="150" height="auto" alt="logo" class="header__img">
                     </a>
                 </div>
 
@@ -71,7 +71,7 @@ class HeaderComponent extends HTMLElement {
                 <!-- Enlace promo -->
                 <div class="header__qr">
                     <a href="/promociones.html">
-                        <img src="/src/public/iconos/promocion.png" alt="icono de promocion" class="header__img">
+                        <img src="/src/public/iconos/promocion.png" width="150" height="auto" alt="icono de promocion" class="header__img">
                     </a>
                 </div>
             </header>

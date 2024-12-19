@@ -38,7 +38,9 @@ const Carousel = async () => {
         const img = document.createElement('img'); 
         img.classList.add("carousel__card-img"); // Aplica estilos CSS específicos para la imagen
         img.setAttribute("src", `${data[key].url}`); // Inserta la URL de la imagen desde la propiedad 'url'
-
+        img.setAttribute("alt", `${data[key].nombre}`); // Se Inserta el nombre como atributo de alt
+        img.setAttribute("width","150"); //asigna explicitamente un width ( para mejorar SEO )
+        img.setAttribute("height","150"); //asigna explicitamente un height ( para mejorar SEO )
         // Construye la estructura de la tarjeta: inserta la imagen en el enlace y el enlace en el contenedor de la tarjeta
         link.appendChild(img); 
         item.appendChild(link); 

@@ -25,7 +25,7 @@ const Slider = async () => {
             <div class="container-slide">
                 <div class="slider__image">
                     <!-- Imagen de la película -->
-                    <img src="${data[key].urlPortada}" alt="${data[key].nombre}" class="slider__image-img">
+                    <img src="${data[key].urlPortada}" alt="${data[key].nombre}" width="150" height="auto" class="slider__image-img">
                 </div>
                 <!-- Título de la película -->
                 <h2 class="slider__title">${data[key].nombre.toUpperCase()}</h2>
