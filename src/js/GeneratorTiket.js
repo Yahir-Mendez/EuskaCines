@@ -24,14 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Hash:', hash);
 
             // Obtener los últimos 6 dígitos del hash
-            const codeTiketCine = hash.slice(-7);
+            const codeTiketCine = hash.slice(-6);
 
              // Derivar los dos números decimales de otras partes del hash
             const decimalPart1 = parseInt(hash.slice(0, 2), 16) % 90 + 10; 
             const decimalPart2 = parseInt(hash.slice(2, 4), 16) % 90 + 10; 
             // Formar el código del ticket
             const ticketCode = `${codeTiketCine}-${decimalPart1}-${decimalPart2}`;
-           
 
             // Crear el objeto tiket
             const tiket = {

@@ -1,5 +1,5 @@
 // Se define la clase HeaderComponent que extiende HTMLElement, lo que permite crear un Web Component
-class HeaderComponent extends HTMLElement {
+class HeaderComponent extends HTMLElement{
     constructor() {
         super(); // Llama al constructor de HTMLElement para inicializar la funcionalidad base del componente
 
@@ -17,7 +17,7 @@ class HeaderComponent extends HTMLElement {
                             <div class="search__icon">
                                 <img src="/src/public/iconos/search-min.svg" width="150" height="auto" alt="icono de buscador" class="search__icon-img">
                             </div>
-                            <input class="search__input" type="text" placeholder="Buscar">
+                            <input class="search__input" type="text" name="buscar" placeholder="Buscar">
                         </div>
                         <!-- Menú para dispositivos pequeños -->
                         <div class="navbar__menu-icon" id="#disableNav">

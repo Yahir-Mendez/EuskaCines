@@ -30,8 +30,8 @@
             <label for="email" class="info-card__description">Email</label>
             <input type="email" name="email" required id="email" class="info-card__description">
             <label for="ticketCode" class="info-card__description">Código del Ticket</label>
-            <input type="text" required pattern="[0-9a-fA-F]{7}-\d{2}-\d{2}" title="El codigo del tiket debe de ser XXXXXX-DD-DD"  id="ticketCode" name="tiket" class="info-card__description">
-            <label for="rating" class="info-card__description">Calificación</label>
+            <input type="text" required pattern="[0-9a-fA-F]{6}-\d{2}-\d{2}" title="El codigo del tiket debe de ser XXXXXX-DD-DD"  id="ticketCode" name="tiket" class="info-card__description">
+            <label  id="rating" class="info-card__description">Calificación</label>
             <div id="rating" class="info-card__rating">
                 <!-- Estrellas para calificación -->
                 <span class="star" data-value="1">☆</span>

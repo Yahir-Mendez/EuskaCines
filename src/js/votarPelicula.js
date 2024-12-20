@@ -68,7 +68,7 @@ const GeneratorTiket = async (email, pelicula) => {
     //Se llama a la funcion que devolvera el hash del tiket
     let tiket = await getHash(cadena);
      // Obtener los últimos 6 dígitos del hash
-     const codeTiketCine = tiket.slice(-7);
+     const codeTiketCine = tiket.slice(-6);
      console.log('Hash:', codeTiketCine);
     // Derivar los dos números decimales de otras partes del hash
     const decimalPart1 = parseInt(tiket.slice(0, 2), 16) % 90 + 10; // Genera un número entre 10 y 99
