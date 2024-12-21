@@ -47,7 +47,7 @@ class FooterComponent extends HTMLElement {
                 <!-- Imagen de licencia creative commons -->
                 <div class="common__image">
                     <a href="https://creativecommons.org/licenses/by/4.0/legalcode.en" target="_blank"> 
-                        <img src="/src/public/footer/com.png" width="30" height="auto" alt="common icon" class="common__image-img">
+                        <img src="/src/public/footer/com.webp" width="30" height="auto" alt="common icon" class="common__image-img">
                     </a>
                 </div>   
                 <!-- Rectángulos decorativos -->

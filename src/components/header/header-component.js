@@ -51,7 +51,7 @@ class HeaderComponent extends HTMLElement{
                 <!-- Logo principal -->
                 <div class="header__logo">
                     <a href="/index.html">
-                        <img src="/src/public/iconos/logo.png" width="150" height="auto" alt="logo" class="header__img">
+                        <img src="/src/public/iconos/logo.webp" width="150" height="auto" alt="logo" class="header__img">
                     </a>
                 </div>
 
@@ -71,7 +71,7 @@ class HeaderComponent extends HTMLElement{
                 <!-- Enlace promo -->
                 <div class="header__qr">
                     <a href="/promociones.html">
-                        <img src="/src/public/iconos/promocion.png" width="150" height="auto" alt="icono de promocion" class="header__img">
+                        <img src="/src/public/iconos/promocion.webp" width="150" height="auto" alt="icono de promocion" class="header__img">
                     </a>
                 </div>
             </header>

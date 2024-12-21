@@ -1,7 +1,7 @@
 {
     "cine1": {
         "cine": "cine donostia",
-        "url": "/src/public/cines/c01.png",
+        "url": "/src/public/cines/c01.webp",
         "descripcion":"Disfruta del cine como nunca antes: una selección de películas impresionantes y un ambiente acogedor que te hará sentir como en casa",
         "contacto":"DONOSTIA@GMAIL.COM",
         "salas": [
@@ -45,7 +45,7 @@
       },
       "cine2": {
         "cine": "cine andoain",
-        "url": "/src/public/cines/c02.png",
+        "url": "/src/public/cines/c02.webp",
         "descripcion":"la experiencia cinematográfica definitiva: grandes películas, gran sonido, y la comodidad que necesitas para disfrutar cada segundo.",
         "contacto":"ANDOAIN@GMAIL.COM",
         "salas": [
@@ -80,7 +80,7 @@
       },
       "cine3": {
         "cine": "cine usurbil",
-        "url": "/src/public/cines/c03.png",
+        "url": "/src/public/cines/c03.webp",
         "descripcion":"Vive la magia del cine en su máxima expresión: las mejores películas, tecnología de vanguardia y un ambiente diseñado para tu confort.",
         "contacto":"USURBIL@GMAIL.COM",
         "salas": [
